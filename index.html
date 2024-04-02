@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusTimer</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+
+    <script src="./src/main.js" type="module" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+
+            <button id="toggle-mode">
+                <span class="sr-only">Ativar/desativar light mode</span>
+                <i class="ph-bold ph-sun"></i>
+                <i class="ph-bold ph-moon"></i>
+            </button>
+            <section class="time">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <div class="controls">
+                    <button class="ph-bold ph-play" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph-bold ph-pause" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph-bold ph-plus" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph-bold ph-minus" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                </div>
+            </section>
+            <section class="music-buttons">
+               
+                    <button class="ph-bold ph-tree" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph-bold ph-cloud-rain" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                
+                
+                    <button class="ph-bold ph-storefront" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                    <button class="ph-bold ph-fire" data-action="toggleRunning">
+                        <span class="sr-only">Play</span>
+                    </button>
+                
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

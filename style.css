@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+  --bg-color: hsl(0, 0%, 100%, 1);
+  --button-music-focus: hsl(194, 97%, 31%, 1);
+  --button-music-default: hsl(240, 9%, 89%);
+  --text-color: hsl(240, 6%, 21%, 1);
+
+  font-size: clamp(40%, 1px + 2vw, 62.5%);
+}
+html.dark{
+    --text-color:hsl(0, 0%, 100%, 1);
+    --bg-color:hsl(240, 6%, 21%, 1);
+}
+html.dark .ph-moon,
+html:not(.dark) .ph-sun{
+    display: none;
+}
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+#toggle-mode{
+    position: absolute;
+    top: 2.6rem;
+    right: 2.6rem;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 3rem;
+}
+#app{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+} 
+.container{
+    display: flex;
+    align-items: center;
+    gap: 19.2rem;
+}
+span{
+   font-size: 12.6rem;
+   line-height: 14.8rem;
+   font-family: "Roboto", sans-serif;
+   color: var(--text-color);
+}
+
+.time{
+    width: 32rem;
+    text-align: center;
+    
+}
+.controls{
+    display: flex;
+    gap: 4rem;
+}
+.controls button{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 999rem;
+    font-size:3.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 3.5px solid ;
+}
+.music-buttons{
+    display: grid;
+    grid-template-columns: repeat(2,15rem);
+    grid-template-rows: repeat(2,14rem);
+    gap: 3.2rem;
+    place-items: center;
+
+}
+.control-music{
+    display: flex;
+
+}
+.music-buttons button{
+    padding: 4.8rem;
+    font-size: 6rem;
+    border-radius: 2.4rem;
+    border: none;
+    background-color: var(--button-music-default);
+}
