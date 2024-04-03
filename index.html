@@ -33,38 +33,36 @@
                 <span id="minutes">25</span>
                 <span>:</span>
                 <span id="seconds">00</span>
-                <div class="controls">
+                <div id="controls">
                     <button class="ph-bold ph-play" data-action="toggleRunning">
                         <span class="sr-only">Play</span>
                     </button>
-                    <button class="ph-bold ph-pause" data-action="toggleRunning">
+                    <button class="ph-bold ph-pause" data-action="togglePause">
                         <span class="sr-only">Play</span>
                     </button>
-                    <button class="ph-bold ph-plus" data-action="toggleRunning">
+                    <button class="ph-bold ph-plus" data-action="turnUp">
                         <span class="sr-only">Play</span>
                     </button>
-                    <button class="ph-bold ph-minus" data-action="toggleRunning">
+                    <button class="ph-bold ph-minus" data-action="turnDown">
                         <span class="sr-only">Play</span>
                     </button>
                 </div>
             </section>
-            <section class="music-buttons">
-               
-                    <button class="ph-bold ph-tree" data-action="toggleRunning">
-                        <span class="sr-only">Play</span>
-                    </button>
-                    <button class="ph-bold ph-cloud-rain" data-action="toggleRunning">
-                        <span class="sr-only">Play</span>
-                    </button>
-                
-                
-                    <button class="ph-bold ph-storefront" data-action="toggleRunning">
-                        <span class="sr-only">Play</span>
-                    </button>
-                    <button class="ph-bold ph-fire" data-action="toggleRunning">
-                        <span class="sr-only">Play</span>
-                    </button>
-                
+            <section id="music-buttons">
+
+                <button class="ph-bold ph-tree" data-action="musicTree" class="green">
+                    <span class="sr-only">Play</span>
+                </button>
+                <button class="ph-bold ph-cloud-rain" data-action="musicRain" class="blue">
+                    <span class="sr-only">Play</span>
+                </button>
+                <button class="ph-bold ph-storefront" data-action="musicStore" class="brown">
+                    <span class="sr-only">Play</span>
+                </button>
+                <button class="ph-bold ph-fire" data-action="musicFire" class="red">
+                    <span class="sr-only">Play</span>
+                </button>
+
             </section>
         </div>
     </div>
