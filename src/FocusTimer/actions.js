@@ -17,6 +17,10 @@ export function togglePause() {
   sounds.café.pause();
   sounds.rain.pause();
   sounds.forest.pause();
+  el.colors.treeColor.classList.remove('green')
+  el.colors.rainColor.classList.remove('blue')
+  el.colors.coffeeColor.classList.remove('brown')
+  el.colors.fireColor.classList.remove('red')
 }
 export function turnUp() {
   timer.turnUp();
