@@ -26,44 +26,60 @@ export function turnDown() {
   timer.turnDown();
 }
 
+let control = state.isMute;
 export function musicTree() {
-  onclick = () => {
+  console.log(control);
+ 
     el.colors.startTree();
-  };
-  sounds.forest.play();
-
-  sounds.fire.pause();
-  sounds.café.pause();
-  sounds.rain.pause();
+    sounds.forest.play();
+    sounds.fire.pause();
+    sounds.café.pause();
+    sounds.rain.pause();
+    
+    if(!control){
+      sounds.forest.pause()
+      el.colors.treeColor.classList.remove('green')
+    }
+    control = !control
+   
 }
 
 export function musicRain() {
-  onclick = () => {
-    el.colors.startRain();
-  };
   
-  sounds.rain.play();
-  sounds.forest.pause();
-  sounds.fire.pause();
-  sounds.café.pause();
+    el.colors.startRain();
+    sounds.rain.play();
+    sounds.forest.pause();
+    sounds.fire.pause();
+    sounds.café.pause();
+    
+    if(!control){
+      sounds.rain.pause()
+      el.colors.rainColor.classList.remove('blue')
+    }
+    control = !control
+  
 }
 export function musicStore() {
-  onclick = () => {
-    el.colors.startCoffee();
-  };
+  el.colors.startCoffee();
   sounds.café.play();
-
   sounds.rain.pause();
   sounds.forest.pause();
   sounds.fire.pause();
+  if(!control){
+    sounds.café.pause()
+    el.colors.coffeeColor.classList.remove('brown')
+  }
+  control = !control
 }
 export function musicFire() {
-  onclick = () => {
-    el.colors.startFire();
-  };
+  el.colors.startFire();
   sounds.fire.play();
-
   sounds.café.pause();
   sounds.rain.pause();
   sounds.forest.pause();
+  if(!control){
+    sounds.fire.pause()
+    el.colors.fireColor.classList.remove('red')
+  }
+  control = !control
 }

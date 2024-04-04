@@ -12,25 +12,25 @@ export const colors = {
     coffeeColor: document.querySelector('#music-buttons .ph-storefront'),
     fireColor: document.querySelector('#music-buttons .ph-fire'),
     startTree(){
-        colors.treeColor.classList.toggle('green')
+        colors.treeColor.classList.add('green')
         colors.rainColor.classList.remove('blue')
         colors.coffeeColor.classList.remove('brown')
         colors.fireColor.classList.remove('red')
     },
     startRain(){
-        colors.rainColor.classList.toggle('blue')
+        colors.rainColor.classList.add('blue')
         colors.treeColor.classList.remove('green')
         colors.coffeeColor.classList.remove('brown')
         colors.fireColor.classList.remove('red')
     },
     startCoffee(){
-        colors.coffeeColor.classList.toggle('brown')
+        colors.coffeeColor.classList.add('brown')
         colors.rainColor.classList.remove('blue')
         colors.treeColor.classList.remove('green')
         colors.fireColor.classList.remove('red')
     },
     startFire(){
-        colors.fireColor.classList.toggle('red')
+        colors.fireColor.classList.add('red')
         colors.rainColor.classList.remove('blue')
         colors.coffeeColor.classList.remove('brown')
         colors.treeColor.classList.remove('green')
